@@ -1,0 +1,23 @@
+@import 'mixins';
+@import 'variables';
+
+
+h1 {
+  font: 100% $font-stack;
+  color: ($primary-color - $secundary-color) * 3;
+  border:  solid;
+  @include border-radius(10px);
+  @extend  .italic;
+
+  span {
+    color: $secundary-color;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+@for $i from 1 through 5 {
+  li#l#{$i} { color: blue - (50 * $i); }
+}

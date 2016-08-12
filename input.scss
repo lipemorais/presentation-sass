@@ -1,0 +1,30 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #ff3355;
+$secundary-color: #ccc;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+h1 {
+  font: 100% $font-stack;
+  color: $secundary-color - $primary-color;
+  border: 1px solid;
+  @include border-radius(10px);
+  @extend  .italic;
+
+  span {
+    color: $secundary-color;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+@for $i from 1 through 5 {
+  li#l#{$i} { color: blue - (50 * $i); }
+}

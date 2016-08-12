@@ -1,0 +1,30 @@
+h1 {
+  font: 100% Helvetica, sans-serif;
+  color: #990009;
+  border: solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+h1 span {
+  color: #ccc; }
+
+.italic, h1 {
+  font-style: italic; }
+
+li#l1 {
+  color: mediumblue; }
+
+li#l2 {
+  color: #00009b; }
+
+li#l3 {
+  color: #000069; }
+
+li#l4 {
+  color: #000037; }
+
+li#l5 {
+  color: #000005; }
+
+/*# sourceMappingURL=input.css.map */
